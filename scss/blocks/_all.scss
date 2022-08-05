@@ -102,6 +102,62 @@ nav {
    max-width: 310px;
    padding: 50px 0 17px 50px;
 }
+ .latest-articles {
+    padding: 145px 0 142px;
+
+    &__inner-span {
+       font-size: 16px;
+       color: $warning;
+    }
+
+    .card-name {
+       border-radius: 0px 36px 10px 10px;
+       height: 500px;
+    }
+
+    .card-body {
+       flex-direction: column;
+    }
+
+    .card-img-top {
+       border-radius: 0% 36px;
+    }
+
+
+    .card {
+       &__img-box::before {
+          content: " Архитектура";
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          font-size: 12px;
+          text-transform: uppercase;
+          border-radius: 5px;
+          padding: 6px 15px;
+          display: inline-block;
+          background-color: $warning;
+          color: $white;
+       }
+    }
+
+    .card-title {
+       font-family: Arial, Helvetica, sans-serif;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 30px;
+       color: #2B2A28;
+    }
+
+    .card-text {
+       font-family: Arial, Helvetica, sans-serif;
+       font-style: normal;
+       font-weight: 300;
+       font-size: 15px;
+       line-height: 30px;
+       color: #2B2A28;
+    }
+ }
 
 
 .footer {

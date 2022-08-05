@@ -2,6 +2,10 @@
      margin-bottom: 196px;
 }
 
+  input {
+       padding: 0 30px;
+       background: red;
+  }
 
 .hero__card-bottom {
      position: absolute;
@@ -11,12 +15,31 @@
 }
 
 .Building {
-     border: 5px solid red;
      padding: 40px 50px 53px 71px;
      background: #FFFFFF;
      box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
      border-radius: 8px;
      margin-bottom: 144px;
+
+     input{
+          display: block;
+          width: 250px;
+     }
+
+     .fild{
+          padding: 38px 0;
+     }
+
+     .texnolg-list{
+          column-gap: 230px;
+     }
+}
+
+.fundaments__section{
+
+     li{
+          margin-bottom: 145px;
+     }
 }
 
 .doubt img {

@@ -15647,11 +15647,6 @@ nav li:nth-child(2n) {
   padding: 50px 0 17px 50px;
 }
 
-.footer {
-  padding: 89px 0 0;
-  background-color: #FFFBF7;
-}
-
 .latest-articles {
   padding: 145px 0 142px;
 }
@@ -15699,8 +15694,18 @@ nav li:nth-child(2n) {
   color: #2B2A28;
 }
 
+.footer {
+  padding: 89px 0 0;
+  background-color: #FFFBF7;
+}
+
 .singel__hero-section {
   margin-bottom: 196px;
+}
+
+input {
+  padding: 0 30px;
+  background: red;
 }
 
 .hero__card-bottom {
@@ -15711,12 +15716,26 @@ nav li:nth-child(2n) {
 }
 
 .Building {
-  border: 5px solid red;
   padding: 40px 50px 53px 71px;
   background: #FFFFFF;
   box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
   border-radius: 8px;
   margin-bottom: 144px;
+}
+.Building input {
+  display: block;
+  width: 250px;
+}
+.Building .fild {
+  padding: 38px 0;
+}
+.Building .texnolg-list {
+  -moz-column-gap: 230px;
+       column-gap: 230px;
+}
+
+.fundaments__section li {
+  margin-bottom: 145px;
 }
 
 .doubt img {
