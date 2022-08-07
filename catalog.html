@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+		<!-- MDB -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="stylesheet" href="css/main.css" />
+		<title>catalog</title>
+	</head>
+
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center">
+					<a class="" href="index.html">
+						<img src="./imgs/лого.svg" alt="logo" width="536" height="40" />
+					</a>
+
+					<div>
+						<span class="text-dark">Связаться напрямую:</span>
+						<ul class="d-flex align-items-center gap-2 list-unstyled m-0">
+							<li>
+								<a href="https://telegram.me/eshonqul74" target="_blank">
+									<i class="fab fa-telegram fa-2x"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="https://telegram.me/eshonqul74" target="_blank">
+									<img src="./imgs/WhatsApp.svg" alt="WhatsApp" width="32" height="32" />
+								</a>
+							</li>
+
+							<li>
+								<a href="https://telegram.me/eshonqul74" target="_blank">
+									<img src="./imgs/вайбер.svg" alt="wayber" width="32" height="32" />
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<a class="text-dark fw-bold fs-5" href="tel:+3 80 (67) 175 56 30">
+							+3 80 (67) 175 56 30
+						</a>
+						<p class="m-0">с 09:00 до 18:00 (пн-вс)</p>
+					</div>
+
+					<div>
+						<div class="d-flex align-items-center gap-4 mb-2 ">
+							<button class="btn btn-warning py-3 px-5">
+								Заказать звонок
+							</button>
+
+							<div class="d-flex gap-1 cursor">
+								<img src="./imgs/ru_logo.svg" alt="lengvich-logo" width="25" height="15">
+								<i class="fas fa-angle-down"></i>
+							</div>
+						</div>
+
+						<p class="m-0 ps-4 fw-light">Бесплатно по Украине</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__bottom mb-2">
+			<div class="container">
+				<nav class="d-flex justify-content-between align-items-center gap-5">
+					<ul class="flex-grow-1 align-items-center m-0 list-unstyled nav-bg">
+						<li>
+							<a class="text-white" href="#">Жилое</a>
+						</li>
+						<li></li>
+						<li>
+							<a class="text-white" href="#">Коммерческое</a>
+						</li>
+
+						<li></li>
+
+						<li>
+							<a class="text-white" href="#">Садовое</a>
+						</li>
+					</ul>
+
+					<ul class="d-flex justify-content-between flex-grow-1 align-items-center m-0 list-unstyled">
+						<li class="fw-bold">
+							<a class="text-dark" href="#">О компании</a>
+						</li>
+
+						<li class="fw-bold">
+							<a class="text-dark" href="#">Наши работы </a>
+						</li>
+
+						<li class="fw-bold">
+							<a class="text-dark" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="breadcrumb ">
+			<div class="container">
+				<p class="breadcrumb__text">Главная страница / Жилое</p>
+			</div>
+		</section>
+
+		<section class="catalog">
+			<div class="container">
+				<div class="row mb-4 d-flex align-items-center">
+					<div class="col-6">
+						<h2 class="catalog__title">Каталог жилых строений</h2>
+					</div>
+					<form class="col-6 catalog__form-search">
+						<img src="./imgs/loupe-section-catalog.svg" alt="loupe" class="loupe position-absolute">
+						<input type="search"
+							class="form-control catalog__search-input border border-1 border-black border-start-0 border-top-0 border-end-0 ps-5 pb-3"
+							placeholder="Поиск по жилым строениям...">
+					</form>
+				</div>
+
+				<div class="row">
+
+					<div class="col-3">
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item mb-3 border border-0">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button bg-transparent fw-bold text-dark" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+										aria-controls="collapseOne">
+										Подкатегория
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<h3 class="accordion-body-title mb-3">Дома и жилые строения</h3>
+										<ul class="accordion-body-list mb-4">
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Дома</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Дома из
+													профилированого бруса</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Дома из
+													оцилиндрованого бруса</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Каркасные дома
+												</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Дома из блока
+												</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Дачи</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Коттеджи</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Виллы</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Усадьбы</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Особняки</p>
+											</li>
+
+										</ul>
+
+
+										<h3 class="accordion-body-title mb-3">Коммерческие строения</h3>
+										<ul class="accordion-body-list mb-4">
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Базы отдыха
+												</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Гостинницы</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Рестораны</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Кафе</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Магазины</p>
+											</li>
+										</ul>
+
+										<h3 class="accordion-body-title mb-3">Садовые и хоз постройки
+										</h3>
+										<ul class="accordion-body-list">
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Деревянные
+													бани из
+													оцилиндрованого бруса</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Деревянные
+													бани из
+													профилированого бруса</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Каркасные
+													конструкции</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Беседки</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Альтанки</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Гаражи</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Кухни</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Детские
+													игровые
+													площадки</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Деревянные
+													детские
+													домики</p>
+											</li>
+
+											<li class="accordion-body-list-item mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Мангальные
+													зоны и
+													барбекю</p>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item mb-3 border border-0">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button bg-transparent text-dark fw-bold" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+										aria-controls="collapseTwo">
+										Сортировать по:
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+
+
+
+
+										<ul class="accordion-body-list mb-4">
+											<li
+												class="accordion-body-list-item accordion-body-item-hover mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Алфавиту</p>
+											</li>
+
+											<li
+												class="accordion-body-list-item accordion-body-item-hover mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Популярности
+												</p>
+											</li>
+
+											<li
+												class="accordion-body-list-item accordion-body-item-hover mb-2 d-flex align-items-baseline gap-3">
+												<img src="./imgs/arrow-right-catalog.svg" alt="arrow-right"
+													class="accordion-body-list-item-img">
+												<p class="accordion-body-list-item-text pe-5">Цене</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item mb-3 border border-0">
+								<h2 class="accordion-header accordion-header-range" id="headingThree">
+									<button class="accordion-button bg-transparent text-dark fw-bold" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+										aria-controls="collapseThree">
+										Площадь (м <sup>2</sup>):
+									</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body px-0 py-5">
+										<div class="accordion-body-range d-flex">
+											<div class="range-item rounded-1 range-item-first"></div>
+											<div class="range-item rounded-1 range-item-second"><span
+													class="range-item-span d-block">268</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item mb-3 border border-0">
+								<h2 class="accordion-header accordion-header-range" id="headingFourth">
+									<button class="accordion-button bg-transparent text-dark fw-bold" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="true"
+										aria-controls="collapseFourth">
+										Цена (грн):
+									</button>
+								</h2>
+								<div id="collapseFourth" class="accordion-collapse collapse show"
+									aria-labelledby="headingFourth" data-bs-parent="#accordionExample">
+									<div class="accordion-body px-0 py-5">
+										<div class="accordion-body-range d-flex">
+											<div class="range-item range-item-first-next"></div>
+											<div class="range-item rounded-1 range-item-second-next"><span
+													class="range-item-span d-block">2 680 000</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-9">
+						<ul class="all-cards-list d-flex flex-wrap gap-4 justify-content-evenly mb-4 list-unstyled">
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-one.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант Z-65
+											«Bavaria»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">135 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">1 000 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-two.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-56
+											«Barcelona»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">249 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">2 800 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-three.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-25 «Garden
+											ECO»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">71 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">580 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-four.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-53
+											«Feeria»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">53.6 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">980 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-five.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант LX-75 «JULIA»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">187 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">2 350 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-six.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-49v2
+											«Nevada»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">146 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">2 421 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-seven.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант OS-77
+											«Milano»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">192 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">3 260 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-eight.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-22
+											«Classic»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">131 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">1 200 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-nine.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-65
+											«Elegant»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">112 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">2 300 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-ten.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-16
+											«Classic
+											Plus»</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">110 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">920 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-eleven.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-23 «ECO
+											Soul»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">186 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">2 150 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="all-cards-item">
+								<div class="card border border-0" style="width: 18.5rem;">
+									<img src="./imgs/catalog-cards-img-twelve.png" class="card-img-top img-thumbnail"
+										alt="card image">
+									<div class="card-body">
+										<h3 class="card-title item-card-title pe-5 mb-3">Вариант ST-99
+											«Edinburgh»
+										</h3>
+										<div class="card-size-wrapper mb-4 d-flex justify-content-between px-2">
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/left-top-size.svg" alt="size img" class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">7.5x9 M</p>
+											</div>
+											<div class="card-size-inner d-flex">
+												<img src="./imgs/top-bottom-size.svg" alt="size img"
+													class="card-size-inner-img me-3">
+												<p class="card-size-inner-text">250 M<sup>2</sup></p>
+											</div>
+										</div>
+										<a href="#" class="btn card-btn text-white py-3 me-3">Ознакомиться</a>
+										<span class="card-span fw-bold">2 458 000 грн</span>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+
+						<div class="project-wrapper d-flex align-items-center justify-content-between p-1 mb-4">
+							<div class="project-inner m-5">
+								<h3 class="project-inner-title mb-3">Нет подходящего проекта?</h3>
+								<p class="project-inner-text mb-4">Мы разработаем проект индивидуально под ваш
+									запрос
+									с помощью 3D-макета</p>
+								<a href="#" class="btn card-btn card-btn-project text-white py-3 px-5 me-3">Разработать
+									проект</a>
+							</div>
+							<img src="./imgs/programmer-bro.png" alt="programmer bro" class="project-wrapper-img">
+						</div>
+
+						<button type="button" class="btn show-more-btn py-3 w-100 mb-5">
+							<img src="./imgs/show-more-icon.png" alt="show more" class="show-more-icon me-3">Показать еще
+							больше
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+
+			<nav class="d-flex justify-content-between align-items-center gap-5 mb-5">
+				<ul class="flex-grow-1 align-items-center m-0 list-unstyled nav-bg">
+					<li>
+						<a class="text-white" href="#">Жилое</a>
+					</li>
+					<li></li>
+					<li>
+						<a class="text-white" href="#">Коммерческое</a>
+					</li>
+					<li></li>
+					<li>
+						<a class="text-white" href="#">Садовое</a>
+					</li>
+				</ul>
+
+				<ul class="d-flex justify-content-between flex-grow-1 align-items-center m-0 list-unstyled">
+					<li class="fw-bold">
+						<a class="text-dark" href="#">О компании</a>
+					</li>
+
+					<li class="fw-bold">
+						<a class="text-dark" href="#">Наши работы </a>
+					</li>
+
+					<button class="btn btn-warning py-3 px-4"> Перейти в каталог домов </button>
+				</ul>
+			</nav>
+
+			<div class="d-flex justify-content-between">
+
+				<ul class="list-unstyled d-flex justify-content-between gap-5">
+					<li>
+						<ul class="list-unstyled">
+							<li class="mb-3">
+								<a class="text-black" href="#">Дома из профилированого <br> бруса</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#"> Дома из оцилиндрованого <br> бруса </a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Каркасные дома</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Дома из блока</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<ul class="list-unstyled">
+							<li class="mb-3">
+								<a class="text-black" href="#">Базы отдыха </a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Гостинницы</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Кафе</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Магазины</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<ul class="list-unstyled">
+							<li class="mb-3">
+								<a class="text-black" href="#">Деревянные бани </a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#"> Беседки</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Детские игровые площадки</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Гаражи</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Деревянные детские домики</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Мангальные зоны и барбекю</a>
+							</li>
+
+							<li class="mb-3">
+								<a class="text-black" href="#">Кухни</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div>
+					<img class="d-block mb-5" src="./imgs/лого.svg" alt="logo" width="495" height="40">
+
+					<div class="mb-4">
+						<span class="text-dark">Связаться напрямую:</span>
+						<ul class="d-flex align-items-center gap-2 list-unstyled m-0">
+							<li>
+								<a href="https://telegram.me/eshonqul74" target="_blank">
+									<i class="fab fa-telegram fa-2x"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="https://telegram.me/eshonqul74" target="_blank">
+									<img src="./imgs/WhatsApp.svg" alt="WhatsApp" width="32" height="32" />
+								</a>
+							</li>
+
+							<li>
+								<a href="https://telegram.me/eshonqul74" target="_blank">
+									<img src="./imgs/вайбер.svg" alt="wayber" width="32" height="32" />
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<a class="text-dark fw-bold fs-5" href="tel:+3 80 (67) 175 56 30">
+							+3 80 (67) 175 56 30
+						</a>
+						<p class="m-0">с 09:00 до 18:00 (пн-вс)</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<hr>
+
+		<div class="footer__bottom py-3">
+			<div class="container">
+				<p class="px-4 fs-6">
+					© 2020. Все права защищены. TokarCompany - Производственно-строительная компания. Информация,
+					представленная
+					на сайте,
+					не является публичной офертой.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

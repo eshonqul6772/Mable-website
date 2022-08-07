@@ -15767,4 +15767,233 @@ input {
   top: 16%;
   left: 10%;
   color: white;
+}
+
+.catalog {
+  margin-bottom: 145px;
+}
+.catalog__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 58px;
+  color: #000;
+}
+.catalog__form-search {
+  padding-left: 170px;
+}
+.catalog__search-input {
+  max-width: 471px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  background: #FFF;
+}
+
+.accordion-button {
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 8px;
+}
+
+.accordion-body-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.accordion-body-list-item:hover {
+  color: #fd7e14;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.accordion-body-item-hover:hover {
+  background-image: url("./../../images/hover-arrow-top-catalog-section.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: calc(50% + 125px) 50%;
+}
+
+.range-item {
+  position: relative;
+  height: 3px;
+}
+
+.range-item::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  display: inline-block;
+  border: 5px solid #CB8734;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  z-index: 3;
+  background-color: #FFF;
+}
+
+.range-item-first {
+  width: 55%;
+  background-color: #CB8734;
+}
+
+.range-item-first::after {
+  position: absolute;
+  top: 15px;
+  content: "10";
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+}
+
+.range-item-second {
+  position: relative;
+  width: 45%;
+  background-color: #E7D8C7;
+}
+
+.range-item-second::after {
+  content: "500";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+  display: inline-block;
+}
+
+.range-item-span {
+  position: absolute;
+  transform: translateX(-40%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000;
+  margin-top: 18px;
+}
+
+.range-item-first-next {
+  width: 45%;
+  background-color: #CB8734;
+}
+
+.range-item-first-next::after {
+  position: absolute;
+  top: 15px;
+  content: "100 000";
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+}
+
+.range-item-second-next {
+  width: 55%;
+  background-color: #E7D8C7;
+}
+
+.range-item-second-next::after {
+  content: "5 000 000";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+  display: inline-block;
+}
+
+.all-cards-item {
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 0px 40px 0px 0px !important;
+}
+
+.card-img-top {
+  border-radius: 0 36px;
+  margin-bottom: 25px;
+}
+
+.item-card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
+}
+
+.card-btn {
+  background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+  box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.project-wrapper {
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 0px 40px 0px 0px;
+  border: 1px solid transparent;
+}
+
+.project-wrapper-img {
+  border-radius: 0 36px;
+}
+
+.project-inner {
+  max-width: 395px;
+  width: 100%;
+}
+
+.project-inner-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+}
+
+.project-inner-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: #000;
+  padding-right: 90px;
+}
+
+.show-more-btn {
+  background-color: #FFFBF7;
+  border-radius: 8px;
+}
+
+.breadcrumb {
+  padding: 25px 0;
+}
+.breadcrumb__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #828282;
 }/*# sourceMappingURL=main.css.map */
