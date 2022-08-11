@@ -15642,6 +15642,64 @@ nav li:nth-child(2n) {
   border-radius: 0px 40px 0px 0px;
 }
 
+.buldings__section {
+  background-color: #FFFBF7;
+  padding: 145px 0;
+}
+.buldings__section .maked-card {
+  margin-bottom: 50px;
+  padding: 80px 50px;
+  background-image: url("../../imgs/bg-stranitsa.png");
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+}
+.buldings__section .maked-card img {
+  position: absolute;
+  top: -57px;
+  right: -73px;
+  transform: translate(-50%);
+}
+
+.tokar__section {
+  padding: 97px 0;
+  background-image: url("../../imgs/tokar-bg-img2.png"), url("../../imgs/tokar-bg-img3.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0, top 0 right 0;
+  background-size: 450px 345px;
+}
+.tokar__section .bg__tokar {
+  position: relative;
+  height: 480px;
+  background-image: url("../../imgs/toker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 190px;
+}
+.tokar__section .bg__tokar > div {
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.tokar__section .percone-description {
+  width: 570px;
+  padding: 45px 51px 35px 43px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 8px;
+  text-align: start;
+}
+
+.share__section {
+  padding: 145px 0;
+  background-color: #FFFBF7;
+}
+
+.share__card {
+  height: 670px;
+}
+
 .card__bottom-description {
   max-width: 310px;
   padding: 50px 0 17px 50px;
@@ -15692,6 +15750,15 @@ nav li:nth-child(2n) {
   font-size: 15px;
   line-height: 30px;
   color: #2B2A28;
+}
+
+.cases-box {
+  background: #df5f5f;
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 8px;
+  width: 370px;
+  height: 250px;
+  padding-bottom: 50px;
 }
 
 .footer {
