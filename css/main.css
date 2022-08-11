@@ -15770,11 +15770,6 @@ nav li:nth-child(2n) {
   margin-bottom: 196px;
 }
 
-input {
-  padding: 0 30px;
-  background: red;
-}
-
 .hero__card-bottom {
   position: absolute;
   max-width: 370px;
@@ -16063,4 +16058,33 @@ input {
   font-size: 12px;
   line-height: 17px;
   color: #828282;
+}
+
+.contact__section {
+  margin-bottom: 145px;
+}
+.contact__section form {
+  padding: 59px 72px 49px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 0px 40px 0px 0px;
+}
+.contact__section form i, .contact__section form img {
+  position: absolute;
+  top: 23%;
+  left: 5%;
+  transform: translate(-50%);
+}
+
+.contact__item {
+  margin-bottom: 30px;
+  padding: 32px 44px 40px 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 0px 40px 0px 0px;
+}
+
+.details__detalist {
+  padding: 145px 0;
+  background-color: #FFFBF7;
 }/*# sourceMappingURL=main.css.map */
