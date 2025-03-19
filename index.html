@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <a id="manualLink" href="#">Ilovamizni yuklab oling</a>
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -749,6 +750,31 @@
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+
+    <script>
+        // Foydalanuvchi qurilmasini aniqlash uchun User Agent dan foydalanamiz
+        const userAgent = navigator.userAgent.toLowerCase();
+
+        // App Store va Play Market havolalari (o‘zingizning ilova havolangizni qo‘ying)
+        const appStoreLink = "https://apps.apple.com/us/app/adliya/id6472713594"; // App Store uchun
+        const playStoreLink = "https://play.google.com/store/apps/details?id=iqro.mobile.smartjustice&hl=ru"; // Play Market uchun
+        const fallbackLink = "https://yourwebsite.com"; // Agar qurilma aniqlanmasa
+
+        // Qurilmani aniqlash va yo‘naltirish
+        let redirectLink = fallbackLink; // Standart havola
+
+        if (userAgent.includes("iphone") || userAgent.includes("ipad")) {
+            redirectLink = appStoreLink; // iPhone yoki iPad bo‘lsa
+        } else if (userAgent.includes("android")) {
+            redirectLink = playStoreLink; // Android bo‘lsa
+        }
+
+        // Avtomatik yo‘naltirish
+        window.location.href = redirectLink;
+
+        // Qo‘lda havolani yangilash (agar avtomatik yo‘naltirish ishlamasa)
+        document.getElementById("manualLink").href = redirectLink;
+    </script>
 </body>
 
 </html>
